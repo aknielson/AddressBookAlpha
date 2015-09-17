@@ -62,6 +62,7 @@
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Post-Deployment" />
     <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment\Data" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\PhoneType.sql" />
@@ -74,5 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Post-Deployment\Data\InitialRecord.sql" />
+    <None Include="Scripts\Post-Deployment\Data\ClearData.sql" />
   </ItemGroup>
 </Project>
